@@ -3,13 +3,18 @@ namespace phpdisimple;
 class DI {
 	private static $injectedSingletonObjects=array();
 	public static function get($className, $arguments=null){
+		$className = self::getClassNameWithNameSpace($className);
 		if (!self::isClassExist($className))
-			throw new Exception("Missing class name: {$className}");
-		$reflectionClass = new ReflectionClass($className);
+			throw new \Exception("Missing class name: {$className}");
+		$reflectionClass = new \ReflectionClass($className);
 		$isArgumentsNotEmpty = self::isArrayNotEmpty($arguments);
 		$object = $isArgumentsNotEmpty?$reflectionClass->newInstanceArgs($arguments):new $className;
 		self::inject($object, $reflectionClass);
 		return $object;
+	}
+	
+	private static function getClassNameWithNameSpace($className){
+		return __NAMESPACE__.'\\'.$className;
 	}
 	
 	private static function inject(&$object, &$reflectionClass){
