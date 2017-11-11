@@ -1,0 +1,15 @@
+{
+	"name" : "PHP-DI-Simple",
+	"description" : "PHP DI Simple",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "matico"
+		}
+	],
+	"require" : {
+		"php" : ">=5.3.3"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "~4.0"
+	}
+}

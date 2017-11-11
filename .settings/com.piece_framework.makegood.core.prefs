@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+phpunit_config_file=/PHP-DISimple/phpunit.xml
+preload_script=/PHP-DISimple/autoloader.php
+test_file_pattern=
+test_folders=/PHP-DISimple/src\u0005/PHP-DISimple/tests
+testing_framework=PHPUnit
