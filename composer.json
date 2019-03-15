@@ -1,5 +1,5 @@
 {
-	"name" : "simple-php-di",
+	"name" : "matico/simple-php-di",
 	"description" : "SimplePHPDI",
 	"license" : "MIT",
 	"authors" : [{
