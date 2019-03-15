@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mactiencong/SimplePHPDI.svg?branch=master)](https://travis-ci.org/mactiencong/SimplePHPDI)
+
 # The simple Dependency Injection lib for PHP (5.3.x ~)
 # How to work
 
