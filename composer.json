@@ -1,6 +1,6 @@
 {
-	"name" : "PHP-DI-Simple",
-	"description" : "PHP DI Simple",
+	"name" : "SimplePHPDI",
+	"description" : "SimplePHPDI",
 	"license" : "MIT",
 	"authors" : [{
 			"name" : "matico"
